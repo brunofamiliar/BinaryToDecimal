@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Binary To Decimal - App Ideas</title>
+</head>
+<body>
+    <section>
+        <ul class="style-button">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <h1 id="title">Binary To Decimal</h1>
+        <label>
+            <input id="input-number" type="text" oninput="handleUserInput(this)" maxlength="20"  onkeyup="restrictCharacters(this)" placeholder="Insert binary number" required>
+        </label>
+        <ul class="buttons">
+            <li><button class="unit" onclick="addNumberToInput(this)" value="0" type="button">0</button></li>
+            <li><button class="unit" onclick="addNumberToInput(this)" value="1" type="button">1</button></li>
+            <li><button class="unit" onclick="removeNumberToInput()" type="button"><span class="arrow-left"></span></button></li>
+        </ul>
+        <span id="result">Hello Word!</span>
+    </section>
+</body>
+<script type="text/javascript" src="js/index.js"></script>
+</html>
